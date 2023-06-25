@@ -1,38 +1,104 @@
-.App {
-  text-align: center;
+.navbar .nav-link {
+  color: #6185fb;
+}
+.navbar {
+  background-color: rgb(13, 22, 54);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo {
+  width: 50px;
+  height: 50px;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+.custom-button {
+  border-radius: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.transaction-item {
+  position: absolute;
+  height: 5rem;
+  bottom: 50px;
+
+}
+#style1{
+  color: #1d2c5c;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+#date {
+  color: #1d2c5c;
+  position: relative;
+  float: right;
+  bottom: 60px;
+  font-weight: bold;
+}
+.transactions{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.img-fluid {
+  height: 60px;
+
+  width: 60px;
+  position: relative;
+  top: 25px;
+  right: 65px;
+}
+
+.button-18 {
   align-items: center;
+  background-color: transparent;
+  border: 0.8px solid black;
+  box-shadow: 0px 0px 4px 0px rgba(203, 202, 202, 0.8);
+  margin: 0 18px 0 0;
+  border-radius: 100px;
+  box-sizing: border-box;
+  color: #384a9c;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto,
+    "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell,
+    "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  line-height: 20px;
+  max-width: 480px;
+  min-height: 40px;
+  min-width: 0px;
+  overflow: hidden;
+  padding: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  touch-action: manipulation;
+  transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s,
+    box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s,
+    color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
 }
 
-.App-link {
-  color: #61dafb;
+.button-18:hover,
+.button-18:focus {
+  background-color: #86e3e3;
+  /* color: #ffffff; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button-18:active {
+  background: #87b1e1;
+  color: rgb(255, 255, 255, 0.7);
+}
+
+.button-18:disabled {
+  cursor: not-allowed;
+  background: rgba(0, 0, 0, 0.08);
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.notification {
+  height: 30px;
+  width: 30px;
 }
